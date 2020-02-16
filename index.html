@@ -8,6 +8,7 @@
     </head>
     <body>
         <header>
+            <!-- top bar -->
             <div class="top-bar">
                 <a class="top-bar-item align-left" href="#">About Store</a>
                 <div class="top-bar-item align-center">
@@ -19,6 +20,8 @@
                         <li class="top-list list-r">Help Center</li>
                     </ul>
                 </div>
+
+                <!-- language dropdown list -->
                 <div class="top-bar-item align-right">
                     <ul class="top-bar-item hover-box">
                         <li class="lang-list"><span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"></li>
@@ -32,9 +35,13 @@
                 </div>
             </div>
 
+            <!-- container for everything else above the page banner -->
             <div class="top-container head-box">
-                <div class="row">
+                <div id="row-1" class="row">
+                    <!-- store logo -->
                     <img class="store-logo" src="images/wine.png">
+
+                    <!-- search bar -->
                     <form class="search-bar" action="#" method="POST">
                         <select class="search-filter" name="categories">
                             <option value="ALL CATEGORIES">ALL CATEGORIES</option>
@@ -42,26 +49,47 @@
                         <input class="search-input" type="text" placeholder="Search for product" name="Search">
                         <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
                     </form>
-                    <div class="basket-container">
-                        <a class="icon" href="#">
+
+                    <!-- basket-->
+                    <div class="basket-container align-right">
+                        <input type="checkbox" id="basket-input">
+                        <label class="basket-dropdown" for="basket-input">
                             <span>3 Items(180$)</span>
-                        </a>
-                        <div class="toggle-dropdown basket">
-                            <h3>Item</h3>
+                            <img src="#">
+                        </label>
+                        <div class="basket-hide">
+                            <ul class="basket-list">
+                                <li>Item</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="toggle-dropdown categories">
-                        <span>Select Category</span>
-                        <ul class="category-list">
+                <div id="row-2" class="row">
+                    <!-- categories dropdown -->
+                    <div class="toggle-dropdown category-list">
+                        <input type="checkbox" id="category-input">
+                        <label class="category-select" for="category-input">
+                            <img class="category-icon" src="images/category-icon.png">
+                            <span class="category-select-text"> Select Category</span>
+                        </label>
+                        <ul class="category-list category-hide">
                             <li>Category</li>
                         </ul>
                     </div>
 
-                    <div class="favorites-container">Popular: Blender Blender1 Blender2 Blender3</div>
+                    <!-- popular items -->
+                    <div class="favorites-container">
+                        <span class="favorites-list-item-index">Popular:</span>
+                        <ol class="favorites-list">
+                            <li class="favorites-list-item-l">Blender</li>
+                            <li class="favorites-list-item">Blender1</li>
+                            <li class="favorites-list-item">Blender2</li>
+                            <li class="favorites-list-item">Blender3</li>
+                        </ol>
+                    </div>
 
+                    <!-- quick links -->
                     <div class="top-quick-links">Orders Wishlist Account Logout</div>
                 </div>
             </div>
