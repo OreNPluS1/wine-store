@@ -10,9 +10,9 @@
         <header>
             <!-- top bar -->
             <div class="top-bar">
-                <a class="top-bar-item align-left" href="#">About Store</a>
-                <div class="top-bar-item align-center">
-                    <ul class="top-bar-item">
+                <a class="flex-item top-bar-item align-left" href="#">About Store</a>
+                <div class="flex-item top-bar-item align-center">
+                    <ul class="flex-item top-bar-item">
                         <li class="top-list list-l">Peyment</li>
                         <li class="top-list list-m">Shipping</li>
                         <li class="top-list list-m">Terms</li>
@@ -22,15 +22,13 @@
                 </div>
 
                 <!-- language dropdown list -->
-                <div class="top-bar-item align-right">
-                    <ul class="top-bar-item hover-box">
+                <div class="flex-item top-bar-item align-right">
+                    <ul class="flex-item top-bar-item hover-box-1">
                         <li class="lang-list"><span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"></li>
-                        
-                            <div class="lang-list-box">
+                            <div class="lang-list-box-1">
                                 <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
                                 <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
                             </div>
-                        
                     </ul>
                 </div>
             </div>
@@ -54,8 +52,8 @@
                     <div class="basket-container align-right">
                         <input type="checkbox" id="basket-input">
                         <label class="basket-dropdown" for="basket-input">
-                            <span>3 Items(180$)</span>
-                            <img src="#">
+                            <span class="basket-text">3 Items(180$)</span>
+                            <img class="basket-image" src="images/basket-icon.png">
                         </label>
                         <div class="basket-hide">
                             <ul class="basket-list">
@@ -90,22 +88,85 @@
                     </div>
 
                     <!-- quick links -->
-                    <div class="top-quick-links">Orders Wishlist Account Logout</div>
+                    <div class="top-quick-links">
+                        <ul class="quick-links-list">
+                            <li class="quick-links-list-item-l"><a href="#">Orders</a></li>
+                            <li class="quick-links-list-item"><a href="#">Wishlist</a></li> 
+                            <li class="quick-links-list-item"><a href="#">Account</a></li> 
+                            <li class="quick-links-list-item-r"><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
+        
+        <!-- store page banner -->
         <div class="banner-container">
-            <h1>Snacks & Drinks</h1>
+            <img class="snacks-image" src="images/snacks-banner.jpg">
+            <h1 class="snacks-banner-text">Snacks & Drinks</h1>
         </div>
+
+        <!-- under-banner navigator -->
         <div class="navigator-container">
-            <ol>
+            <ol class="navigator-list navigator-center">
                 <li>HOME</li> - 
                 <li>CATELOG</li> - 
                 <li>OLD WINE</li>
             </ol>
 
-            <div class="align-right toggle-dropdown">
+            <div class="navigator-sort toggle-dropdown navigator-center">
                 <span>Sort by Pouplarity</span>
+            </div>
+        </div>
+
+        <!-- container for the page contents -->
+        <div class="page-container">
+            <div class="content-filters-container">
+                <div class="filter-box">
+                    <span>PRICE</span>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                </div>
+            </div>
+            <div class="content-container"></div>
+        </div>
+
+        <!-- container for the page bottom -->
+        <div class="bottom-container">
+            <div id="row-3" class="row">
+                <!-- bottom quick links 1 -->
+                <ul class="quick-links-list">
+                    <li class="quick-links-list-item-l"><a href="#">HOME</a></li>
+                    <li class="quick-links-list-item"><a href="#">CATALOG</a></li> 
+                    <li class="quick-links-list-item"><a href="#">ORDERS</a></li> 
+                    <li class="quick-links-list-item"><a href="#">WISHLIST</a></li>
+                    <li class="quick-links-list-item-r"><a href="#">ACCOUNT</a></li>
+                </ul>
+
+                <!-- language selection, again-->
+                <div class="flex-item align-right">
+                    <ul class="flex-item hover-box-2">
+                        <li class="lang-list"><span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"></li>
+                            <div class="lang-list-box-2">
+                                <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
+                                <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
+                            </div>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="row-4" class="row">
+                <!-- bottom quick links 2 -->
+                <ul class="quick-links-list">
+                    <li class="quick-links-list-item-l"><a href="#">Payment</a></li>
+                    <li class="quick-links-list-item"><a href="#">Shipping</a></li> 
+                    <li class="quick-links-list-item"><a href="#">Terms</a></li> 
+                    <li class="quick-links-list-item"><a href="#">Refunds</a></li>
+                    <li class="quick-links-list-item-r"><a href="#">Help Center</a></li>
+                </ul>
+
+                <p class="copyrights">Copyrights 2020 @ oren, All rights reserved</p>
             </div>
         </div>
     </body>
