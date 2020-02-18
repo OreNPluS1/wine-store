@@ -123,11 +123,61 @@
         <div class="page-container">
             <div class="content-filters-container">
                 <div class="filter-box">
-                    <span>PRICE</span>
-                    <div class="slidecontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input class="collapse-checkbox toggle" id="collapsible1" type="checkbox" checked>
+                    <label for="collapsible1" class="lbl-toggle" tabindex="0">PRICE <span class="cheveron"></span></label>
+                    <div class="collapsible-content">
+                        <div class="content-inner slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
                     </div>
                 </div>
+
+                <div class="filter-box">
+                    <input class="collapse-checkbox toggle" id="collapsible2" type="checkbox" checked>
+                    <label for="collapsible2" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <input class="filter-radio" type="radio" id="type1" name="type" value="type1wine">
+                            <label for="type1">Type 1 Wine</label><br>
+                            <input class="filter-radio" type="radio" id="type2" name="type" value="type2wine">
+                            <label for="type2">Type 2 Wine</label><br>
+                            <input class="filter-radio" type="radio" id="type3" name="type" value="type3wine">
+                            <label for="type3">Type 3 Wine</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-box">
+                    <input class="collapse-checkbox toggle" id="collapsible3" type="checkbox" checked>
+                    <label for="collapsible3" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <input class="mini-search" type="text" placeholder="Search" name="filter-search"><br>
+                            <input class="filter-radio" type="radio" id="brand1" name="brand" value="brand1wine">
+                            <label for="brand1">Brand Type 1</label><br>
+                            <input class="filter-radio" type="radio" id="brand2" name="brand" value="brand2wine">
+                            <label for="brand2">Brand Type 2</label><br>
+                            <input class="filter-radio" type="radio" id="brand3" name="brand" value="brand3wine">
+                            <label for="brand3">Brand Type 3</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-box">
+                    <input class="collapse-checkbox toggle" id="collapsible4" type="checkbox">
+                    <label for="collapsible4" class="lbl-toggle" tabindex="0">COLLECTION <span class="cheveron"></span></label>
+                </div>
+
+                <div class="filter-box">
+                    <input class="collapse-checkbox toggle" id="collapsible5" type="checkbox">
+                    <label for="collapsible5" class="lbl-toggle" tabindex="0">RATING <span class="cheveron"></span></label>
+                </div>
+
+                <div class="filter-box">
+                    <input class="collapse-checkbox toggle" id="collapsible6" type="checkbox">
+                    <label for="collapsible6" class="lbl-toggle" tabindex="0">PRICES <span class="cheveron"></span></label>
+                </div>
+
             </div>
             <div class="content-container"></div>
         </div>
