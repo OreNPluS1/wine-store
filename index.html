@@ -26,19 +26,19 @@
                 <input class="collapse-checkbox toggle" id="collapsible2" type="checkbox" checked>
                 <label for="collapsible2" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
                 -->
-                <div class="flex-item top-bar-item align-right">
-                    <input class="collapse-checkbox lang-box-toggle" id="collapsible7" type="checkbox">
-                    <label for="collapsible7" class="lang-lbl-toggle" tabindex="0">
-                        <span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"><span class="cheveron"></span>
-                    </label>
-                    <div class="collapse-box">
-                        <div class="inner-collapse-box lang-list-box-1">
-                            <ul>
+                <div class="flex-item top-bar-item align-right lang-div">
+                    <ul class="hover-box-1">
+                        <input class="collapse-checkbox lang-box-toggle" id="collapsible7" type="checkbox">
+                        <label for="collapsible7" class="lang-lbl-toggle" tabindex="0">
+                            <span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"><span class="cheveron"></span>
+                        </label>
+                        <div class="collapse-box">
+                            <div class="inner-collapse-box lang-list-box-1">
                                 <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
                                 <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
-                            </ul>
+                            </div>
                         </div>
-                    </div>
+                    </ul>
                 </div>
             </div>
 
@@ -130,10 +130,15 @@
 
         <!-- container for the page contents -->
         <div class="page-container">
+
+            <!-- container for the product filters box -->
             <div class="content-filters-container">
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible1" type="checkbox" checked>
-                    <label for="collapsible1" class="lbl-toggle">PRICE <span class="cheveron"></span></label>
+                    <label for="collapsible1" class="lbl-toggle">
+                        <span class="filter-name">PRICE</span>
+                        <span class="filter-cheveron cheveron"></span>
+                    </label>
                     <div class="collapsible-content">
                         <div class="content-inner slide-container">
                             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
@@ -188,7 +193,90 @@
                 </div>
 
             </div>
-            <div class="content-container"></div>
+            <!-- container for the porducts box -->
+            <div class="products-upper-container">
+
+                <!-- 3 Products in each line -->
+                <!-- first row -->
+                <div class="row product-row-1">
+                    <div class="product-container">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-container m">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second row -->
+                <div class="row product-row-2">
+                    <div class="product-container">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-container m">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-container">
+                        <div class="inner-product-container">
+                            <img class="product-image align-center" src="images/blenders-pride.png">
+                            <p class="product-name align-center">Blenders Pride</p>
+                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $256</p>
+                            <a class="buy-button align-center" href="#">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-number-navigator">
+                    <a class="page-nav align-left page-go-prev" href="#"><i class="fa fa-long-arrow-left"></i> PREV</a>
+                    <div class="align-center page-nav page-num-links">
+                        <a class="page-num-link" href="#">1</a>
+                        <a class="page-num-link" href="#">2</a>
+                        <a class="page-num-link current-page" href="#">3</a>
+                        <a class="page-num-link" href="#">4</a>
+                        <a class="page-num-link" href="#">5</a>
+                        <span class="page-num-dots">...</span>
+                        <a class="page-num-link" href="#">10</a>
+                    </div>
+                    <a class="page-nav align-right page-go-next" href="#">NEXT <i class="fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
 
         <!-- container for the page bottom -->
@@ -206,10 +294,15 @@
                 <!-- language selection, again-->
                 <div class="flex-item align-right">
                     <ul class="flex-item hover-box-2">
-                        <li class="lang-list"><span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"></li>
-                            <div class="lang-list-box-2">
-                                <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
-                                <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
+                        <input class="collapse-checkbox lang-box-toggle" id="collapsible8" type="checkbox">
+                        <label for="collapsible8" class="lang-lbl-toggle" tabindex="0">
+                            <span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"><span class="cheveron"></span>
+                        </label>
+                            <div class="collapse-box">
+                                <div class="inner-collapse-box">
+                                    <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
+                                    <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
+                                </div>
                             </div>
                     </ul>
                 </div>
