@@ -22,14 +22,23 @@
                 </div>
 
                 <!-- language dropdown list -->
+                <!--
+                <input class="collapse-checkbox toggle" id="collapsible2" type="checkbox" checked>
+                <label for="collapsible2" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
+                -->
                 <div class="flex-item top-bar-item align-right">
-                    <ul class="flex-item top-bar-item hover-box-1">
-                        <li class="lang-list"><span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"></li>
-                            <div class="lang-list-box-1">
+                    <input class="collapse-checkbox lang-box-toggle" id="collapsible7" type="checkbox">
+                    <label for="collapsible7" class="lang-lbl-toggle" tabindex="0">
+                        <span class="lang-text">English</span><img class="flag-icon" src="images/usa-flag.png"><span class="cheveron"></span>
+                    </label>
+                    <div class="collapse-box">
+                        <div class="inner-collapse-box lang-list-box-1">
+                            <ul>
                                 <li class="lang-list list-m"><a href="#">Hebrew</a><img class="flag-icon" src="images/isarel-flag.png"></li>
                                 <li class="lang-list"><a href="#">Dutch</a><img class="flag-icon" src="images/netherlands-flag.png"></li>
-                            </div>
-                    </ul>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -124,9 +133,9 @@
             <div class="content-filters-container">
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible1" type="checkbox" checked>
-                    <label for="collapsible1" class="lbl-toggle" tabindex="0">PRICE <span class="cheveron"></span></label>
+                    <label for="collapsible1" class="lbl-toggle">PRICE <span class="cheveron"></span></label>
                     <div class="collapsible-content">
-                        <div class="content-inner slidecontainer">
+                        <div class="content-inner slide-container">
                             <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                         </div>
                     </div>
@@ -134,7 +143,7 @@
 
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible2" type="checkbox" checked>
-                    <label for="collapsible2" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
+                    <label for="collapsible2" class="lbl-toggle">BRANDS <span class="cheveron"></span></label>
                     <div class="collapsible-content">
                         <div class="content-inner">
                             <input class="filter-radio" type="radio" id="type1" name="type" value="type1wine">
@@ -149,7 +158,7 @@
 
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible3" type="checkbox" checked>
-                    <label for="collapsible3" class="lbl-toggle" tabindex="0">BRANDS <span class="cheveron"></span></label>
+                    <label for="collapsible3" class="lbl-toggle">BRANDS <span class="cheveron"></span></label>
                     <div class="collapsible-content">
                         <div class="content-inner">
                             <input class="mini-search" type="text" placeholder="Search" name="filter-search"><br>
@@ -165,17 +174,17 @@
 
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible4" type="checkbox">
-                    <label for="collapsible4" class="lbl-toggle" tabindex="0">COLLECTION <span class="cheveron"></span></label>
+                    <label for="collapsible4" class="lbl-toggle">COLLECTION <span class="cheveron"></span></label>
                 </div>
 
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible5" type="checkbox">
-                    <label for="collapsible5" class="lbl-toggle" tabindex="0">RATING <span class="cheveron"></span></label>
+                    <label for="collapsible5" class="lbl-toggle">RATING <span class="cheveron"></span></label>
                 </div>
 
                 <div class="filter-box">
                     <input class="collapse-checkbox toggle" id="collapsible6" type="checkbox">
-                    <label for="collapsible6" class="lbl-toggle" tabindex="0">PRICES <span class="cheveron"></span></label>
+                    <label for="collapsible6" class="lbl-toggle">PRICES <span class="cheveron"></span></label>
                 </div>
 
             </div>
