@@ -140,8 +140,17 @@
                         <span class="filter-cheveron cheveron"></span>
                     </label>
                     <div class="collapsible-content">
-                        <div class="content-inner slide-container">
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        <div class="content-inner price">
+                            <span class="price align-center">$600</span>
+
+                            <div class="content-inner slide-container">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </div>
+                            
+                            <div class="price">
+                                <span class="price align-left">60%</span>
+                                <span class="price align-right">$2000</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,13 +159,22 @@
                     <input class="collapse-checkbox toggle" id="collapsible2" type="checkbox" checked>
                     <label for="collapsible2" class="lbl-toggle">BRANDS <span class="cheveron"></span></label>
                     <div class="collapsible-content">
-                        <div class="content-inner">
-                            <input class="filter-radio" type="radio" id="type1" name="type" value="type1wine">
-                            <label for="type1">Type 1 Wine</label><br>
-                            <input class="filter-radio" type="radio" id="type2" name="type" value="type2wine">
-                            <label for="type2">Type 2 Wine</label><br>
-                            <input class="filter-radio" type="radio" id="type3" name="type" value="type3wine">
-                            <label for="type3">Type 3 Wine</label>
+                        <div class="brands-1-filter content-inner">
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="type" value="type1wine">
+                                <span class="filter-radio-show"></span>
+                                Type 1 Wine
+                            </label><br>
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="type" value="type1wine">
+                                <span class="filter-radio-show"></span>
+                                Type 2 Wine
+                            </label><br>
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="type" value="type1wine">
+                                <span class="filter-radio-show"></span>
+                                Type 3 Wine
+                            </label><br>
                         </div>
                     </div>
                 </div>
@@ -166,13 +184,25 @@
                     <label for="collapsible3" class="lbl-toggle">BRANDS <span class="cheveron"></span></label>
                     <div class="collapsible-content">
                         <div class="content-inner">
-                            <input class="mini-search" type="text" placeholder="Search" name="filter-search"><br>
-                            <input class="filter-radio" type="radio" id="brand1" name="brand" value="brand1wine">
-                            <label for="brand1">Brand Type 1</label><br>
-                            <input class="filter-radio" type="radio" id="brand2" name="brand" value="brand2wine">
-                            <label for="brand2">Brand Type 2</label><br>
-                            <input class="filter-radio" type="radio" id="brand3" name="brand" value="brand3wine">
-                            <label for="brand3">Brand Type 3</label>
+                            <div class="f-search-box-container">
+                                <input class="filter-search-box" type="text" placeholder="Search" name="filter-search">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="brand" value="brand1wine">
+                                <span class="filter-radio-show"></span>
+                                Brand Type 1
+                            </label><br>
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="brand" value="brand1wine">
+                                <span class="filter-radio-show"></span>
+                                Brand Type 2
+                            </label><br>
+                            <label class="radio-container">
+                                <input class="filter-radio" type="radio" name="brand" value="brand1wine">
+                                <span class="filter-radio-show"></span>
+                                Brand Type 3
+                            </label><br>
                         </div>
                     </div>
                 </div>
