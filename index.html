@@ -50,7 +50,7 @@
 
                     <!-- search bar -->
                     <form class="search-bar" action="#" method="POST">
-                        <select class="search-filter" name="categories">
+                        <select class="search-filter bold" name="categories">
                             <option value="ALL CATEGORIES">ALL CATEGORIES</option>
                         </select>
                         <input class="search-input" type="text" placeholder="Search for product" name="Search">
@@ -61,7 +61,7 @@
                     <div class="basket-container align-right">
                         <input type="checkbox" id="basket-input">
                         <label class="basket-dropdown" for="basket-input">
-                            <span class="basket-text">3 Items(180$)</span>
+                            <span class="basket-text"><span class="color-gray">3 Items</span>(180$)</span>
                             <img class="basket-image" src="images/basket-icon.png">
                         </label>
                         <div class="basket-hide">
@@ -80,29 +80,31 @@
                             <img class="category-icon" src="images/category-icon.png">
                             <span class="category-select-text"> Select Category</span>
                         </label>
-                        <ul class="category-list category-hide">
-                            <li>Category</li>
-                        </ul>
+                        <div class="float">
+                            <ul class="category-list category-hide">
+                                <li>Category</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- popular items -->
                     <div class="favorites-container">
-                        <span class="favorites-list-item-index">Popular:</span>
+                        <span class="favorites-list-item-index color-gray">Popular:</span>
                         <ol class="favorites-list">
-                            <li class="favorites-list-item-l">Blender</li>
-                            <li class="favorites-list-item">Blender1</li>
-                            <li class="favorites-list-item">Blender2</li>
-                            <li class="favorites-list-item">Blender3</li>
+                            <li class="favorites-list-item-l bold">Blender</li>
+                            <li class="favorites-list-item bold">Blender1</li>
+                            <li class="favorites-list-item bold">Blender2</li>
+                            <li class="favorites-list-item bold">Blender3</li>
                         </ol>
                     </div>
 
                     <!-- quick links -->
                     <div class="top-quick-links">
                         <ul class="quick-links-list">
-                            <li class="quick-links-list-item-l"><a href="#">Orders</a></li>
-                            <li class="quick-links-list-item"><a href="#">Wishlist</a></li> 
-                            <li class="quick-links-list-item"><a href="#">Account</a></li> 
-                            <li class="quick-links-list-item-r"><a href="#">Logout</a></li>
+                            <li class="quick-links-list-item-l"><a class="color-link-black" href="#">Orders</a></li>
+                            <li class="quick-links-list-item"><a class="color-link-black" href="#">Wishlist</a></li> 
+                            <li class="quick-links-list-item"><a class="color-link-black" href="#">Account</a></li> 
+                            <li class="quick-links-list-item-r"><a class="color-link-black" href="#">Logout</a></li>
                         </ul>
                     </div>
                 </div>
@@ -118,13 +120,22 @@
         <!-- under-banner navigator -->
         <div class="navigator-container">
             <ol class="navigator-list navigator-center">
-                <li>HOME</li> - 
-                <li>CATELOG</li> - 
-                <li>OLD WINE</li>
+                <li class="nav-item l">HOME</li> -  
+                <li class="nav-item m">CATELOG</li> -  
+                <li class="nav-item r">OLD WINE</li>
             </ol>
 
             <div class="navigator-sort toggle-dropdown navigator-center">
-                <span>Sort by Pouplarity</span>
+                <span>Sort by </span>
+                <input class="collapse-checkbox lang-box-toggle" id="collapsible9" type="checkbox">
+                <label for="collapsible9" class="lang-lbl-toggle blue-color">
+                    <span>Popularity </span><span class="cheveron"></span>
+                </label>
+                <div class="collapse-box">
+                    <div class="inner-collapse-box">
+                        <span>Category</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -233,7 +244,7 @@
                         <div class="inner-product-container">
                             <img class="product-image align-center" src="images/blenders-pride.png">
                             <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
                             <p class="porduct-price">Price: $256</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
@@ -241,20 +252,20 @@
 
                     <div class="product-container m">
                         <div class="inner-product-container">
-                            <img class="product-image align-center" src="images/blenders-pride.png">
-                            <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
-                            <p class="porduct-price">Price: $256</p>
+                            <img class="product-image align-center" src="images/matusalem.png">
+                            <p class="product-name align-center">Matusalem</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $165</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
                     </div>
 
                     <div class="product-container">
                         <div class="inner-product-container">
-                            <img class="product-image align-center" src="images/blenders-pride.png">
-                            <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
-                            <p class="porduct-price">Price: $256</p>
+                            <img class="product-image align-center" src="images/rami-martin.png">
+                            <p class="product-name align-center">Rami Martin</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $266</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
                     </div>
@@ -264,29 +275,29 @@
                 <div class="row product-row-2">
                     <div class="product-container">
                         <div class="inner-product-container">
-                            <img class="product-image align-center" src="images/blenders-pride.png">
-                            <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
-                            <p class="porduct-price">Price: $256</p>
+                            <img class="product-image align-center" src="images/lamberhurst.jpg">
+                            <p class="product-name align-center">Lamberhurst</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $686</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
                     </div>
 
                     <div class="product-container m">
                         <div class="inner-product-container">
-                            <img class="product-image align-center" src="images/blenders-pride.png">
-                            <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
-                            <p class="porduct-price">Price: $256</p>
+                            <img class="product-image align-center" src="images/hennessy.png">
+                            <p class="product-name align-center">Hennessy</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
+                            <p class="porduct-price">Price: $348</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
                     </div>
 
                     <div class="product-container">
                         <div class="inner-product-container">
-                            <img class="product-image align-center" src="images/blenders-pride.png">
-                            <p class="product-name align-center">Blenders Pride</p>
-                            <p class="product-description align-center">Lorem Ipsum is simply dummy text.</p>
+                            <img class="product-image align-center" src="images/old-monk.png">
+                            <p class="product-name align-center">Old Monk</p>
+                            <p class="product-description align-center color-gray">Lorem Ipsum is simply dummy text.</p>
                             <p class="porduct-price">Price: $256</p>
                             <a class="buy-button align-center" href="#">Buy Now</a>
                         </div>
@@ -313,16 +324,16 @@
         <div class="bottom-container">
             <div id="row-3" class="row">
                 <!-- bottom quick links 1 -->
-                <ul class="quick-links-list">
-                    <li class="quick-links-list-item-l"><a href="#">HOME</a></li>
-                    <li class="quick-links-list-item"><a href="#">CATALOG</a></li> 
-                    <li class="quick-links-list-item"><a href="#">ORDERS</a></li> 
-                    <li class="quick-links-list-item"><a href="#">WISHLIST</a></li>
-                    <li class="quick-links-list-item-r"><a href="#">ACCOUNT</a></li>
+                <ul class="quick-links-list bottom">
+                    <li class="quick-links-list-item-l"><a class="color-link-black" href="#">HOME</a></li>
+                    <li class="quick-links-list-item"><a class="color-link-black" href="#">CATALOG</a></li> 
+                    <li class="quick-links-list-item"><a class="color-link-black" href="#">ORDERS</a></li> 
+                    <li class="quick-links-list-item"><a class="color-link-black" href="#">WISHLIST</a></li>
+                    <li class="quick-links-list-item-r"><a class="color-link-black" href="#">ACCOUNT</a></li>
                 </ul>
 
                 <!-- language selection, again-->
-                <div class="flex-item align-right">
+                <div class="flex-item align-right bottom-right">
                     <ul class="flex-item hover-box-2">
                         <input class="collapse-checkbox lang-box-toggle" id="collapsible8" type="checkbox">
                         <label for="collapsible8" class="lang-lbl-toggle" tabindex="0">
@@ -340,15 +351,15 @@
 
             <div id="row-4" class="row">
                 <!-- bottom quick links 2 -->
-                <ul class="quick-links-list">
-                    <li class="quick-links-list-item-l"><a href="#">Payment</a></li>
-                    <li class="quick-links-list-item"><a href="#">Shipping</a></li> 
-                    <li class="quick-links-list-item"><a href="#">Terms</a></li> 
-                    <li class="quick-links-list-item"><a href="#">Refunds</a></li>
-                    <li class="quick-links-list-item-r"><a href="#">Help Center</a></li>
+                <ul class="quick-links-list bottom">
+                    <li class="quick-links-list-item-l"><a class="color-gray" href="#">Payment</a></li>
+                    <li class="quick-links-list-item"><a class="color-gray" href="#">Shipping</a></li> 
+                    <li class="quick-links-list-item"><a class="color-gray" href="#">Terms</a></li> 
+                    <li class="quick-links-list-item"><a class="color-gray" href="#">Refunds</a></li>
+                    <li class="quick-links-list-item-r"><a class="color-gray" href="#">Help Center</a></li>
                 </ul>
 
-                <p class="copyrights">Copyrights 2020 @ oren, All rights reserved</p>
+                <p class="color-gray copyrights">Copyrights 2020 @ oren, All rights reserved</p>
             </div>
         </div>
     </body>
